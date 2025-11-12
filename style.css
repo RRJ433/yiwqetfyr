@@ -106,9 +106,9 @@ header nav ul li a.btn-kontak:hover {
     color: #fff;
 }
 
-/* --- Bagian Hero (Perubahan di sini) --- */
+/* --- Bagian Hero (Diubah di sini) --- */
 .hero {
-    /* Mengganti gambar placeholder dengan gambar Anda */
+    /* Menggunakan gambar Anda sebagai background */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('IMG_20251112_105104.jpg') no-repeat center center/cover;
     height: 70vh;
     display: flex;
