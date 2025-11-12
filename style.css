@@ -106,7 +106,7 @@ header nav ul li a.btn-kontak:hover {
     color: #fff;
 }
 
-/* --- Bagian Hero (Diubah di sini) --- */
+/* --- Bagian Hero (INI YANG PENTING) --- */
 .hero {
     /* Menggunakan gambar Anda sebagai background */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('IMG_20251112_105104.jpg') no-repeat center center/cover;
