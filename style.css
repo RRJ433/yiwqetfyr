@@ -1,0 +1,292 @@
+/* --- Reset & Gaya Dasar --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+html {
+    scroll-behavior: smooth; /* Efek scroll halus */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Tombol (Button) --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f8ff;
+}
+
+/* --- Header & Navigasi --- */
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky; /* Membuat header tetap di atas */
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+}
+
+header nav ul li a.btn-kontak {
+    background: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+header nav ul li a.btn-kontak:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* --- Bagian Hero --- */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x700') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* --- Gaya Bagian Umum --- */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tentang {
+    background: #fff;
+}
+
+.tentang p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* --- Bagian Program --- */
+.program-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.program-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex-basis: 32%;
+    text-align: center;
+}
+
+.program-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+/* --- Bagian Berita --- */
+.berita {
+    background: #fff;
+}
+
+.berita-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.berita-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden; /* Agar gambar sesuai radius */
+    flex-basis: 32%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.berita-card img {
+    width: 100%;
+    height: auto;
+}
+
+.berita-card h3 {
+    font-size: 20px;
+    padding: 15px 20px 0 20px;
+}
+
+.berita-card span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    padding: 0 20px;
+}
+
+.berita-card p {
+    padding: 10px 20px;
+}
+
+.berita-card a {
+    display: inline-block;
+    padding: 0 20px 20px 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* --- Bagian CTA --- */
+.cta {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #fff;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta .btn-secondary {
+    background-color: #fff;
+    color: #007BFF;
+    border: none;
+}
+
+.cta .btn-secondary:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- Footer --- */
+footer {
+    background: #333;
+    color: #ccc;
+    padding-top: 40px;
+}
+
+.footer-cols {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.footer-cols .col {
+    flex-basis: 23%;
+}
+
+.footer-cols h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-cols ul {
+    list-style: none;
+}
+
+.footer-cols ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-cols ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding: 20px 0;
+    font-size: 14px;
+}
